@@ -1,0 +1,154 @@
+body
+{
+	background-color:#2D4263 !important;
+	color: #efefef;
+    font-size: 17px;
+}
+.form-inline {
+	font-family: 'Lobster', cursive;
+}
+.film img:hover {
+    opacity:0.7;
+}
+.film h2 {
+	background: black;
+	text-decoration: none;
+}
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #C0D06F;
+	margin: 20px;
+}
+.reje-cont {
+	background: lightgrey;
+	padding: 2%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.reje-cont h1 {
+	color: black;
+}
+.reje {
+	margin-left: 25px;
+}
+.film
+{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container-detal{
+	background: lightgrey;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 800px;
+}
+.container-detal img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: inline-block;
+	-webkit-box-shadow: 0px 5px 24px 0px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 0px 5px 24px 0px rgba(66, 68, 90, 1);
+	box-shadow: 0px 5px 24px 0px rgba(66, 68, 90, 1);
+}
+.opis-detal {
+	padding: 1%;
+	margin-left: 3%;
+}
+.movistitle-detal {
+	color: red;
+	font-family: 'Lobster', cursive;
+}
+.detal-jez {
+	color: red;
+}
+.detal-rok {
+	font-weight: bold;
+
+}
+footer {
+	margin-top: 30%;
+}
+
+.film img
+{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+.log-cont {
+	min-height: 600px;
+	margin-top: 50px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background: lightgray;
+	padding: 2%;
+}
+
+.navbar
+{
+	min-height: 80px;
+}
+
+.bg-nav
+{
+	background-color: #C84B31 !important;
+}
+
+
+.list-group-item-dark
+{
+	background-color: #373a3d;
+	color: white;
+}
+
+.list-group-item-dark:hover
+{
+	background-color: #91a33b !important;
+}
+
+.list-group .active
+{
+	background-color: #91a33b !important;
+	cursor: default;
+}
+
+.blockquote
+{
+	line-height: 120%;
+}
+
+@media (max-width: 575px)
+{
+	.wpis
+	{
+		margin: 40px 20px;
+		text-align: left;
+		font-size: 15px;
+	}
+
+	.float-left, .float-right
+	{
+		max-width: 50%;
+	}
+
+	.blockquote
+	{
+		font-size: 17px;
+	}
+
+	.list-group
+	{
+		text-align: center;
+	}
+}

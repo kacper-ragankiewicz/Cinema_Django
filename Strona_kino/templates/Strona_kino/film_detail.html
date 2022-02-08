@@ -1,0 +1,18 @@
+{% extends 'Strona_kino/base.html' %}
+
+{% block content %}
+    <div class="container-detal">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                 <img src="{{object.obraz.url}}">
+            </div>
+
+            <div class="col-sm-6 col-md4 opis-detal">
+                <h1 class="movistitle-detal">{{object.tytul}}</h1>
+                <h3>{{ object.opis}}</h3>
+                <h3 class="detal-rok">{{ object.data_wydania }}</h3>
+                <h3 class="detal-jez">{{ object.jezyk }}</h3>
+            </div>
+        </div>
+    </div>
+{% endblock %}
