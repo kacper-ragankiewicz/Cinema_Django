@@ -60,7 +60,7 @@
                     {% if user.is_authenticated %}
                         <h2>Zalogowany <b>{{ user.name }}</b> <a href="#">wyloguj</a></h2>
                         {% else %}
-                        <h2><a class="badge badge-primary" href="{% url 'login_site' %}">Zaloguj się</a></h2> <h2><a class="badge badge-success reje" href="{% url 'rejestracja' %}">Rejestracja</a><h2>
+                        <h2><a class="badge badge-primary" href="{% url 'login_site' %}">Zaloguj się</a></h2> <h2><a class="badge badge-success reje" href="{% url 'rejestracja' %}">Rejestracja</a></h2>
                      {% endif %}
 
 				</div>

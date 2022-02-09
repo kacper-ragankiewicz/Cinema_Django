@@ -5,8 +5,8 @@
         <div class="row">
             {%for Film in object_list %}
                 <div class="film col-sm-6 col-md-4">
-                    <a href="#">
-                        <img src="{{Film.obraz.url}}">
+                    <a href="film/{{ Film.id }}">
+                        <img src="{{Film.obraz.url}}" alt="none">
                         <h2 class="movistitle">{{Film.tytul}}</h2>
                     </a>
                 </div>
