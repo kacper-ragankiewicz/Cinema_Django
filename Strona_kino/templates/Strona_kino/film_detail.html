@@ -1,4 +1,4 @@
-git {% extends 'Strona_kino/base.html' %}
+{% extends 'Strona_kino/base.html' %}
 
 {% block content %}
     <div class="container-detal">
@@ -8,6 +8,7 @@ git {% extends 'Strona_kino/base.html' %}
             </div>
 
             <div class="col-sm-6 col-md4 opis-detal">
+                <h1 class="blockquote-footer">{{ object.kategoria }}</h1>
                 <h1 class="movistitle-detal">{{object.tytul}}</h1>
                 <h3>{{ object.opis}}</h3>
                 <h3 class="detal-rok">{{ object.data_wydania }}</h3>

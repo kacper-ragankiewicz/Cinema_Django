@@ -2,12 +2,12 @@ from django.db import models
 from django.db.models import Model
 
 CATEGORY_CHOICE = (
-    ('A', 'AKCJA'),
-    ('B', 'BIOGRAFICZNY'),
-    ('D', 'DRAMAT'),
-    ('F', 'FANTASY'),
-    ('K', 'KOMEDIA'),
-    ('R', 'ROMANS'),
+    ('AKCJA', 'AKCJA'),
+    ('BIOGRAFIA', 'BIOGRAFICZNY'),
+    ('DRAMAT', 'DRAMAT'),
+    ('FANTASY', 'FANTASY'),
+    ('KOMEDIA', 'KOMEDIA'),
+    ('ROMANS', 'ROMANS'),
 )
 LANGUAGE_CHOICE = (
     ('PL', 'POLSKI'),
@@ -57,7 +57,7 @@ class Film(models.Model):
     tytul = models.CharField("Tytuł filmu", max_length=100)
     opis = models.TextField("Opis filmu", max_length=1000, blank=True, null=True)
     obraz = models.ImageField(upload_to='Strona_kino', blank=True, null=True)
-    kategoria = models.CharField(choices=CATEGORY_CHOICE, max_length=1)
+    kategoria = models.CharField(choices=CATEGORY_CHOICE, max_length=15)
     jezyk = models.CharField(choices=LANGUAGE_CHOICE, max_length=2)
     status = models.CharField(choices=STATUS_CHOICES, max_length=2)
     data_wydania = models.IntegerField(default=0)
