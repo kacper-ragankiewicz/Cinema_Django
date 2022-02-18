@@ -53,7 +53,3 @@ def rejestracja(request):
 
 
 
-
-
-
-
